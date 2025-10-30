@@ -1,6 +1,6 @@
 # HelixPythonLiveRunner
 A simple batch script that lets you **run Python code live inside Helix on Windows**.  
-Edit your file in Helix (left pane) and instantly see your output update (right pane) — perfect for Python learners!
+Edit your file in Helix (left pane) and instantly see your output update (right pane) perfect for Python learners!
 
 ---
 
