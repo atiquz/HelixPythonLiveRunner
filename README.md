@@ -66,3 +66,5 @@ Before running, make sure you have the following installed:
 
 ✅ Once setup is complete — just code, save, and see instant results side by side!
 
+---
+![HelixPythonLiveRunner Screenshot](HelixPythonLiveRunnerScreenshot.png)
