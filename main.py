@@ -1,0 +1,5 @@
+print("hello World")
+print("How are you")
+print("What are you doing")
+print("hello")
+print("can you do a work for me")
