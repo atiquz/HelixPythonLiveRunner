@@ -20,7 +20,7 @@ Follow these simple steps to get started with **HelixPythonLiveRunner** 👇
 1. **Create your workspace:**
    - Make a folder named `Python Learning` in this location:  
      ```
-     C:\Users\atiqu\Desktop\Python Learning
+     C:\Users\YOURUSERNAME\Desktop\Python Learning
      ```
    - Inside it, create a file named `main.py`.  
      Example content:
@@ -31,15 +31,15 @@ Follow these simple steps to get started with **HelixPythonLiveRunner** 👇
 2. **Create the batch file:**
    - In this location, create a new file named:
      ```
-     C:\Users\atiqu\Desktop\pythonLearning.bat
+     C:\Users\YOURUSERNAME\Desktop\pythonLearning.bat
      ```
    - Copy the batch script from this repository into that file.
 
 3. **Verify paths in the script:**
    - Make sure the two paths match your setup:
      ```
-     C:\Users\atiqu\Desktop\Python Learning
-     C:\Users\atiqu\Desktop\pythonLearning.bat
+     C:\Users\YOURUSERNAME\Desktop\Python Learning
+     C:\Users\YOURUSERNAME\Desktop\pythonLearning.bat
      ```
 
 4. **Run the script:**
