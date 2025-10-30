@@ -1,4 +1,4 @@
-:: Replace the C:\Users\atiqu\Desktop\Python Learning or C:\Users\atiqu\Desktop\pythonLearning.bat according your specific folder and bat location.
+:: Replace the C:\Users\atiqu\Desktop\Python Learning or C:\Users\atiqu\Desktop\pythonLearning.bat according your specific folder and bat file location.
 
 @echo off
 cd /d "C:\Users\atiqu\Desktop\Python Learning"
