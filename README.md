@@ -1,52 +1,112 @@
-# HelixPythonLiveRunner
-A simple batch script that lets you **run Python code live inside Helix on Windows**.  
+#  🐍 HelixPythonLiveRunner
+A simple and fast **live Python runner inside Helix** using Windows Terminal.
 Edit your file in Helix (left pane) and instantly see your output update (right pane) perfect for Python learners!
 
 ---
 
 ## 🚀 Features
+- Works entirely with built-in Windows + Python tools
+- Fully refreshed output window on each run
 - Auto-runs Python script on every save  
 - Split view: code (left) + output (right)  
-- Works directly with **Helix editor**  
+- Works directly with **Helix editor**
 - No external tools needed  
-- Easy one-click setup  
+- Easy one-click setup
+---
+
+### 📂 Folder Structure
+
+Your setup folder should look like this:
+
+```
+C:\Users\<YourName>\Desktop\Python Learning\
+│
+├── main.py                # Your main Python file
+├── watch.py               # Auto-reload watcher
+└── pythonLearning.bat     # Launcher script
+```
 
 ---
 
-## ⚙️ Setup Guide
+### ⚙️ Setup Steps
 
-Follow these simple steps to get started with **HelixPythonLiveRunner** 👇  
+1. **Clone or Download this repository**
 
-1. **Create your workspace:**
-   - Make a folder named `Python Learning` in this location:  
-     ```
-     C:\Users\YOURUSERNAME\Desktop\Python Learning
-     ```
-   - Inside it, create a file named `main.py`.  
-     Example content:
-     ```python
-     print("Hello, Helix!")
-     ```
+   ```bash
+   git clone https://github.com/atiquz/HelixPythonLiveRunner.git
+   ```
 
-2. **Create the batch file:**
-   - In this location, create a new file named:
-     ```
-     C:\Users\YOURUSERNAME\Desktop\pythonLearning.bat
-     ```
-   - Copy the batch script from this repository into that file.
+2. **Move the folder (optional)**
+   You can place it anywhere, but the default setup assumes:
 
-3. **Verify paths in the script:**
-   - Make sure the two paths match your setup:
-     ```
-     C:\Users\YOURUSERNAME\Desktop\Python Learning
-     C:\Users\YOURUSERNAME\Desktop\pythonLearning.bat
-     ```
+   ```
+   C:\Users\<YourName>\Desktop\Python Learning
+   ```
 
-4. **Run the script:**
-   - Double-click `pythonLearning.bat`.  
-   - It will automatically:
-     - Open **Helix** in the left pane with `main.py`.
-     - Run **Python output** live in the right pane — auto-refreshes whenever you save the file.
+3. **Open `pythonLearning.bat` and adjust paths (if needed)**
+   If you moved the folder, edit the `.bat` file and change:
+
+   ```
+   cd /d "C:\Users\<YourName>\Desktop\Python Learning"
+   ```
+
+   to your folder’s location.
+
+4. **Double-click `pythonLearning.bat`**
+
+   * Left pane → Helix opens with `main.py`
+   * Right pane → Starts watching and auto-running on every save
+
+5. **Start coding!**
+   Each time you press **Ctrl+S** in Helix, the right pane will refresh:
+
+   ```
+   Running main.py ...
+   ---------------------------------------
+   [your script output here]
+   ---------------------------------------
+   ```
+
+---
+
+### 🧩 Customization
+
+* To change which file is auto-run, edit this line in `watch.py`:
+
+  ```python
+  MAIN = ROOT / "main.py"
+  ```
+
+  Example:
+
+  ```python
+  MAIN = ROOT / "app.py"
+  ```
+
+* To change refresh speed:
+
+  ```python
+  POLL_INTERVAL = 0.2  # seconds
+  ```
+
+* To watch only certain folders or exclude files, adjust the `gather_files()` function.
+
+---
+
+### 🚀 Example Workflow
+
+1. Open the project by double-clicking `pythonLearning.bat`
+2. Write Python code in Helix
+3. Save (`Ctrl + S`)
+4. Instantly see results refresh on the right pane
+
+---
+
+### 🧠 Notes
+
+* Works best on **Windows Terminal**, not old `cmd.exe`
+* No external libraries — 100% standard Python
+* You can modify the `.bat` to open other editors or shells if desired
 
 ---
 
@@ -62,9 +122,18 @@ Before running, make sure you have the following installed:
 
 > ⚠️ Make sure all of the above tools are **added to your system PATH**.
 
----
-
 ✅ Once setup is complete — just code, save, and see instant results side by side!
 
 ---
+
+### 💬 Credits
+
+Made by **Md Atiquz Zaman**
+Repository: [HelixPythonLiveRunner](https://github.com/atiquz/HelixPythonLiveRunner)
+
+---
+
+### 📸 Screenshot
+
 ![HelixPythonLiveRunner Screenshot](HelixPythonLiveRunnerScreenshot.png)
+
